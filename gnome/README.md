@@ -2,6 +2,17 @@
 
 This folder holds files for my preferred GNOME keybindings and extensions.
 
+## To Use
+
+Run the following to import each hotkey file:
+
+```bash
+dconf load /org/gnome/settings-daemon/plugins/media-keys/ < ./media-hotkeys.txt
+dconf load /org/gnome/mutter/keybindings/                 < ./mutter-hotkeys.txt
+dconf load /org/gnome/shell/keybindings/                  < ./shell-hotkeys.txt
+dconf load /org/gnome/desktop/wm/keybindings/             < ./window-manager-hotkeys.txt
+```
+
 ## Keybinding/Interaction Philosophy
 
 The following guidelines are the basis for my particular settings:
